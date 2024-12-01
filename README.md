@@ -1,5 +1,7 @@
 # Simple Obsidian MkDocs
 
+TEST
+
 Un simple modèle de dépôt GitHub pour publier des notes d'Obsidian via MkDocs avec le thème Material.
 
 Le site ainsi produit est visible à l'adresse : <https://ericecmorlaix.github.io/simple_template_obsidian_mkdocs/>. Il montre quelques solutions permettant plus ou moins la transition de la syntaxe d'Obsidian vers celle de MkDocs.

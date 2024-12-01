@@ -1,4 +1,4 @@
-# Accueil
+# Accueil ou PRESQUE
 
 Ce site est un exemple simple de publication sur le Web, avec MkDocs et le thème Material, de notes écrites dans Obsidian et hébergées sur GitHub. Il montre quelques solutions permettant plus ou moins la transition de la syntaxe d'Obsidian vers celle de MkDocs.
 
