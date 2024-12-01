@@ -75,6 +75,7 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
   - meta                          # Métadonnées
   - def_list                      # Listes de définition.
   - attr_list                     # Sélecteurs CSS et attributs HTML personnalisés
+  - md_in_html
   - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
   - admonition                    # Pour permettre les admonitions de MkDocs # Boite d'avertissements  !!! info "ma remarque"
   - toc:                          # Configuration de la table des matières générée automatiquement à partir des titres du niveau 2
@@ -118,8 +119,11 @@ plugins:
   - roamlinks 
   - mermaid2
   - callouts # Pour la conversion des callouts d'Obsidian en admonitions de MkDocs https://pypi.org/project/mkdocs-callouts/
-  - git-revision-date-localized
-  
+  # - git-revision-date-localized
+  - macros # pip install mkdocs-macros-plugin
+  - mkdocs-jupyter : # pip install mkdocs-jupyter https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file
+      include_source: True  
+      # ignore_h1_titles: True  
   
    
 ### Configuration d'une licence
