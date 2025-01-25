@@ -14,27 +14,27 @@
 
 **Plan du cours:**
 
-**I. Introduction au SQL (2 séances)**
+## I. Introduction au SQL (2 séances)
 
-- **1.1. Qu'est-ce que le SQL?**
+### 1.1. Qu'est-ce que le SQL?
     
-    - Définition du langage SQL et ses applications.
-    - Histoire et évolution du SQL.
-    - Différents types de SGBD (relationnels, NoSQL)
+- Définition du langage SQL et ses applications.
+- Histoire et évolution du SQL.
+- Différents types de SGBD (relationnels, NoSQL)
     
-- **1.2. Structure des bases de données relationnelles:**
+### 1.2. Structure des bases de données relationnelles:
     
-    - Concept de tables, colonnes, lignes et clés.
-    - Relations entre les tables et clés étrangères.
-    - Introduction au langage DDL (Data Definition Language).
+- Concept de tables, colonnes, lignes et clés.
+- Relations entre les tables et clés étrangères.
+- Introduction au langage DDL (Data Definition Language).
     
-- **1.3. Introduction au langage DML (Data Manipulation Language)**
+### 1.3. Introduction au langage DML (Data Manipulation Language)
     
     - Opérations de base: SELECT, INSERT, UPDATE, DELETE.
     - Syntaxe de base des requêtes SQL.
     
 
-**Exercice:**
+### 1.4. Exercice:
 
 - **Enoncé:** Créer une base de données "Bibliothèque" avec une table "Livres" contenant les colonnes: ID, Titre, Auteur, Année.
 - **Solution:**
@@ -75,8 +75,8 @@ CREATE TABLE Livres (
 - **2.4. Fonctions d'agrégation:**
     
     - COUNT(), SUM(), AVG(), MAX(), MIN().
-    - La clause GROUP BY : SELECT col1, SUM(col2) FROM table GROUP BY col1;
-    - La clause HAVING : SELECT col1, SUM(col2) FROM table GROUP BY col1 HAVING SUM(col2) > 100;
+    - La clause GROUP BY : `SELECT col1, SUM(col2) FROM table GROUP BY col1;`
+    - La clause HAVING : `SELECT col1, SUM(col2) FROM table GROUP BY col1 HAVING SUM(col2) > 100;`
     
 
 **Exercice:**
@@ -108,7 +108,8 @@ ORDER BY NombreLivres DESC;
     
     - Combinaison de plusieurs conditions dans la clause ON.
     - Utilisation des opérateurs logiques dans la clause ON.
-    
+
+UNION / UNION ALL
 
 **Exercice:**
 
@@ -158,7 +159,8 @@ INNER JOIN Emprunts E ON L.ID = E.LivreID;
 - **Solution:**
     
 ```sql
-UPDATE Livres SET Titre = 'Le Petit Prince (Nouvelle édition)' WHERE Titre = 'Le Petit Prince'; 
+UPDATE Livres SET Titre = 'Le Petit Prince (Nouvelle édition)' WHERE Titre = 'Le Petit Prince';
+
 DELETE FROM Emprunts WHERE DateRetour < DATE('now');
 ```
     
@@ -206,6 +208,12 @@ COMMIT TRANSACTION;
     
     - Supprimer une table.
     
+1. **Advanced SQL Topics**
+    
+    - Using views and stored procedures
+    - Creating triggers
+    - SQL and object-oriented programming
+    - Using window functions
 
 **Exercice:**
 
